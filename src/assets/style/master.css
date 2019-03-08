@@ -1,0 +1,56 @@
+@font-face {
+  font-family: "CustomFontRegular";
+  src: url("../fonts/CustomFontRegular.woff") format("woff"), url("../fonts/CustomFontRegular.woff2") format("woff2"); }
+
+@font-face {
+  font-family: "CustomFontRegularItal";
+  src: url("../fonts/CustomFontRegularItal.woff") format("woff"), url("../fonts/CustomFontRegularItal.woff2") format("woff2"); }
+
+@font-face {
+  font-family: "CustomFontBold";
+  src: url("../fonts/CustomFontBold.woff") format("woff"), url("../fonts/CustomFontBold.woff2") format("woff2"); }
+
+@font-face {
+  font-family: "CustomFontBoldItal";
+  src: url("../fonts/CustomFontBoldItal.woff") format("woff"), url("../fonts/CustomFontBoldItal.woff2") format("woff2"); }
+
+@font-face {
+  font-family: "Icon";
+  src: url("../fonts/Icon.woff") format("woff"), url("../fonts/Icon.woff2") format("woff2"); }
+
+body {
+  font-family: 'CustomFontRegular', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  margin: 0; }
+  body #root {
+    height: 100%;
+    display: flex;
+    flex-direction: column; }
+
+html, body {
+  height: 100%;
+  overflow: hidden;
+  background-color: #e8e8e8; }
+  html h1, html h2, html h3, html h4, html h5, body h1, body h2, body h3, body h4, body h5 {
+    font-weight: bold; }
+  html h1, html h2, html h3, html h4, html h5, html p, body h1, body h2, body h3, body h4, body h5, body p {
+    margin: 0; }
+  html button, body button {
+    appearance: none;
+    border: 0;
+    border-radius: 0; }
+  html button, html a, body button, body a {
+    cursor: pointer;
+    text-decoration: none; }
+  html input, body input {
+    border: 0; }
+  html *, body * {
+    box-sizing: border-box;
+    outline: none; }
+  html main, body main {
+    flex: 1;
+    position: relative; }
+  html .scrollable, body .scrollable {
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch; }
+    html .scrollable::-webkit-scrollbar, body .scrollable::-webkit-scrollbar {
+      display: none; }

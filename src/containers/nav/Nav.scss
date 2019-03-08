@@ -1,0 +1,60 @@
+@import './../../assets/style/_variable/icon';
+@import './../../assets/style/_variable/pallette';
+.nav {
+    // min-height: 0;
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-right: 20px;
+        z-index: 1000;
+        background-color: white;
+        &--link {
+            width: 190px;
+            padding: 20px;
+            position: relative;
+            img {
+                display: block;
+                width: 100%;
+            }
+            @media screen and (max-width: 768px) {
+                width: 140px;
+            }
+        }
+        &--tools {
+            display: flex;
+            align-items: center;
+            margin-left: 10px;
+            & > div {
+                margin-left: 10px;
+            }
+        }
+    }
+    &__dropdown {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 100%;
+        height: 0px;
+        padding: 0 20px;
+        transition: all 0.1s ease-in-out;
+        overflow: hidden;
+        background-color: black;
+        a {
+            padding: 7px;
+            border: solid 2px white;
+            border-radius: 5px;
+            margin-left: 7px;
+            color: white;
+            font-size: 10px;
+            &.active {
+                background-color: white;
+                color: black;
+            }
+        }
+        &--open {
+            height: 60px;
+        }
+    }
+}

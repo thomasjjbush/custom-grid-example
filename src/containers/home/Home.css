@@ -1,0 +1,7 @@
+.home {
+  display: flex;
+  justify-content: space-between;
+  min-height: 0; }
+  .home__articles {
+    flex: 1;
+    margin: 20px; }

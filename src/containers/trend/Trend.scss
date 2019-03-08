@@ -1,0 +1,43 @@
+.trend {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+    position: relative;
+    background: linear-gradient(to bottom, #353535 0%,#131313 100%);
+    &__scrollable {
+        flex: 1;
+        &--hero {
+            display: flex;
+            align-items: center;
+            padding: 30px;
+            background: url(./../../assets/img/placeholder.jpg) center top no-repeat;
+            background-size: cover;
+            overflow: hidden;
+            top: 0; right: 0; left: 0;
+            &--mask {
+                position: absolute;
+                top: 0; right: 0; bottom: 0; left: 0;
+                background: #4fd566;
+                z-index: 200;
+            }
+            h1 {
+                z-index: 250;
+                color: white;
+            }
+        }
+        &--content {
+            position: relative;
+            z-index: 100;
+            overflow: hidden;
+            margin: 0 20px;
+            p {
+                padding: 20px;
+                border: solid 2px white;
+                border-radius: 5px;
+                margin-bottom: 20px;
+                color: white;
+            }
+        }
+    }
+}

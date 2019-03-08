@@ -1,0 +1,33 @@
+[class^="icon-"], [class*=" icon-"] {
+    &:before {
+        font-family: 'Icon' !important;
+        speak: none;
+        font-style: normal;
+        font-weight: normal;
+        font-variant: normal;
+        text-transform: none;
+        line-height: 1;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+}
+.icon {
+    &-search:before {
+        content: "\e986";
+    }
+    &-close:before {
+        content: "\ea0f";
+    }
+    &-facebook:before {
+        content: "\ea90";
+    }
+    &-instagram:before {
+        content: "\ea92";
+    }
+    &-twitter:before {
+        content: "\ea96";
+    }
+    &-warning:before {
+        content: "\ea07";
+    }
+}
